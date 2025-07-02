@@ -184,16 +184,25 @@
       postProcess: [quickreference],
       edDraftURI: "",
       thisVersionURI: "https://semiceu.github.io/RRMV/releases/0.2.0",
-      prevVersionURI: "",
+      prevVersionURI: "https://semiceu.github.io/rrmv/releases/0.1.1/",
       latestVersion: "https://semiceu.github.io/RRMV/releases/0.2.0",
       specStatus: "base",
-      publishDate: "2025-01-15",
+      publishDate: "2025-06-27",
       editors: myeditors,
       authors: myauthors,
       otherLinks: [
         {
           key: "Owners:",
           data: myowners
+        }
+        
+        ,
+        { key: " Previous version:",
+          data: [
+            { value: "https://semiceu.github.io/rrmv/releases/0.1.1/",
+              href: "https://semiceu.github.io/rrmv/releases/0.1.1/"
+            }
+          ]
         }
         
         ,
@@ -346,7 +355,7 @@
 <h3>Context</h3>
 
 <p>
-Effective policymaking relies heavily on monitoring, as assessing the impact of legislation and policies is crucial to determining whether specific objectives have been met. However, lack of coordination when setting reporting requirements can lead to legal interoperability barriers that then lead to inefficient policy measures, and to duplicated and overlapping requests, data duplication, and unclear data location.
+Effective policymaking relies heavily on monitoring, as assessing the impact of legislation and policies is crucial to determining whether specific objectives have been met. However, lack of coordination when setting reporting requirements can lead to legal interoperability barriers that then lead to inefficient policy measures, and to duplicated and overlapping requirements, data duplication, and unclear data location.
 </p>
 
 <p>
@@ -392,7 +401,7 @@ In support of this initiative, the European Commission has identified streamlini
 <section id="specstatus">
   <h2>Status</h2>
     <p>
-	    This application profile has the status SEMIC Working Draft published at 2025-01-15.
+	    This application profile has the status SEMIC Working Draft published at 2025-06-27.
     </p>
     <p>
       Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="RRMV">Changelog</a>.
@@ -483,6 +492,7 @@ The cardinalities and qualifications are included in the figure.
                             |
 			      <a href="#Action">Action</a> |
 			      <a href="#ActionResult">Action Result</a> |
+			      <a href="#Agent">Agent</a> |
 			      <a href="#AgentRole">Agent Role</a> |
 			      <a href="#Requirement">Requirement</a> |
 			      <a href="#TemporalEntitySpecification">Temporal Entity Specification</a> |
@@ -491,15 +501,13 @@ The cardinalities and qualifications are included in the figure.
                             The main entities are supported by:
                             <br />
                             |
-			      <a href="#Agent">Agent</a> |
 			      <a href="#AgentCategory">Agent Category</a> |
-			      <a href="#AgentType">Agent Type</a> |
 			      <a href="#Annotation">Annotation</a> |
 			      <a href="#Concept">Concept</a> |
 			      <a href="#DurationTemporalEntitySpecification">Duration Temporal Entity Specification</a> |
 			      <a href="#Expression">Expression</a> |
 			      <a href="#Frequency">Frequency</a> |
-			      <a href="#InstantTemportalEntitySpecification">Instant Temportal Entity Specification</a> |
+			      <a href="#InstantTemporalEntitySpecification">Instant Temporal Entity Specification</a> |
 			      <a href="#IntervalTemporalEntitySpecification">Interval Temporal Entity Specification</a> |
 			      <a href="#LegalExpression">Legal Expression</a> |
 			      <a href="#Literal">Literal</a> |
@@ -522,9 +530,9 @@ The cardinalities and qualifications are included in the figure.
                 
     </div>
     <div>
-        <a href="/RRMV/releases/0.2.0/html/overview.jpg"
+        <a href="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/html/overview.jpg"
            target="_blank">
-            <img src="/RRMV/releases/0.2.0/html/overview.jpg"/>
+            <img src="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -1136,6 +1144,154 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
 
 
 
+   
+        <section>
+            <h3 id="Agent">
+                <a href="http://data.europa.eu/2qy/rrmv#Agent"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#Agent"
+                   data-placement="right">Agent</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Agent&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A legal subject, which refers to any entity involved in an Action, including but not limited to individual entities (such as natural persons or organizations) and groups of entities (such as classes of persons, organizations, or things)
+
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Agent.hascategory">has category</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Agent.hascategory"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasCategory"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has category%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Agent.hascategory" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasCategory"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasCategory"
+                                           data-placement="right">
+                                        has category</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#AgentCategory" data-placement="right">Agent Category</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Connects the Agent to its AgentCategory.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
 
 
 
@@ -1417,8 +1573,6 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
 
 
 
-
-
    
         <section>
             <h3 id="Requirement">
@@ -1536,7 +1690,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    This relation cannot reuse the eli URI as it would force the class to be an eli:Expression TBD issue 43
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -1636,7 +1790,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     associates a rrmv:Requirement with a unique identifier, denoted by a Uniform Resource Identifier (URI), which serves as a reference to the portion (or portions) of the text from where the Requirement is expressed and modelled.
@@ -1689,7 +1843,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     
                                 </td>
                                 <td>
-                                    0..1
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     TBD
@@ -1742,14 +1896,13 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     
                                 </td>
                                 <td>
-                                    0..1
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     	A related resource in which the described resource is physically or logically included.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    TBD definition in FRBROO is circular: F8 is the inverse of F8i and in F8i is the inverse of F8. Kept for now the DCT definition.
-
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -1855,7 +2008,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     Indicates a somehow related other document, not necessarily a legal resource.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    TBD Issue 43: using this property make a Requirement an instance of an eli:Expression or eli:LegalResource
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -2233,7 +2386,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    (TBD) The frequency in which the requirement is to be executed in case of repetitive mandate.
+                                    The frequency in which the Action is to be executed in case of repetitive mandate.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2395,7 +2548,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     Indicates whether a temporal aspect exists but is undefined.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    TBD: definition to be improved
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -2611,154 +2764,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="Agent">
-                <a href="http://data.europa.eu/2qy/rrmv#Agent"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#Agent"
-                   data-placement="right">Agent</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Agent&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A legal subject, which refers to any entity involved in an Action, including but not limited to individual entities (such as natural persons or organizations) and groups of entities (such as classes of persons, organizations, or things)
-
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Agent.hastype">has type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Agent.hastype"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasType"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Agent.hastype" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-placement="right">
-                                        has type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#AgentType" data-placement="right">Agent Type</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A kind of agent
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
 
 
    
@@ -2821,62 +2826,6 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
-            <h3 id="AgentType">
-                <a href="http://data.europa.eu/2qy/rrmv#AgentType"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#AgentType"
-                   data-placement="right">Agent Type</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20AgentType&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The kind of Agent.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#Concept">Concept</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
             <h3 id="Annotation">
                 <a href="http://www.w3.org/ns/oa#Annotation"
                    data-toggle="tooltip"
@@ -2898,13 +2847,6 @@ They are included in the Application Profile because they form the range of prop
                     The class for Web Annotations.
                 </dd>
                 
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        TBD:  definition is meaningless
-                    </dd>
                 
                 
                     <dt>
@@ -2988,13 +2930,13 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    0..*
+                                    1
                                 </td>
                                 <td property="rdfs:comment">
                                     The object of the relationship is a resource that is a body of the Annotation.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    TBD: card, ranges, improved definition
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -3047,7 +2989,7 @@ They are included in the Application Profile because they form the range of prop
                                     The relationship between an Annotation and its Target.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    TBD: need for supproperty? range? Definition is meaningless
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -3470,13 +3412,6 @@ They are included in the Application Profile because they form the range of prop
                 </dd>
                 
                 
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        TBD: definition should not be connected to Requirement
-                    </dd>
-                
                 
                     <dt>
                         Properties
@@ -3658,16 +3593,16 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
-            <h3 id="InstantTemportalEntitySpecification">
+            <h3 id="InstantTemporalEntitySpecification">
                 <a href="http://data.europa.eu/2qy/rrmv#InstantSpec"
                    data-toggle="tooltip"
                    data-content="http://data.europa.eu/2qy/rrmv#InstantSpec"
-                   data-placement="right">Instant Temportal Entity Specification</a>
+                   data-placement="right">Instant Temporal Entity Specification</a>
 
             </h3>
 	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
 		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20InstantTemportalEntitySpecification&body=Explain%20your%20issue"}}>
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20InstantTemporalEntitySpecification&body=Explain%20your%20issue"}}>
                    <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
 		</a>
 		-->
@@ -3820,7 +3755,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#InstantTemportalEntitySpecification" data-placement="right">Instant Temportal Entity Specification</a>
+                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
                                         
                                     
                                 </td>
@@ -3873,7 +3808,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#InstantTemportalEntitySpecification" data-placement="right">Instant Temportal Entity Specification</a>
+                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
                                         
                                     
                                 </td>
@@ -5196,6 +5131,11 @@ Note that ELI ontology accommodates different point of view on what should be co
 
  
   <section id="controlled-vocs" class="informative">
+
+
+
+
+
   <h2>Controlled Vocabularies</h2>
 
 
@@ -5212,11 +5152,12 @@ Validation systems SHOULD produce errors.
    <tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
    <tr><td>rrmv:hasType</td><td><a href="#Role">Role</a></td><td><a href="">Role Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
    <tr><td>rrmv:hasType</td><td><a href="#Agent">Agent</a></td><td><a href="">Agent Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   <tr><td>rrmv:hasCategory</td><td><a href="#Agent">Agent</a></td><td><a href="">Agent Category</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
    <tr><td>rrmv:hasstatus</td><td><a href="#Action">Action</a></td><td><a href="">Status</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
    </tbody>
 </table>
 
-A first version of the controlled vocabularies can be downloaded as the file <a href="/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
+A first version of the controlled vocabularies can be downloaded as the file <a href="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
 
 
 
@@ -5269,11 +5210,7 @@ For RRMV the usage of this vocabulary will be restricted to the following:
 Other more elaborated annotation functionality is considered beyond the core needs for RRMV.
 
 
-<h3>Guidelines for examples</h3
-
-<h3> Annotation example </h3>
-
-<aside class="example" title="Annotation for legislation CELEX:32024R0900">
+<aside class="example" title="Illustration of the use of the Web Annotation Vocabulary for legislation CELEX:32024R0900">
 <pre class="nohighlight turtle">
 
 @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
@@ -5319,7 +5256,6 @@ example:ActionResult032024R0900 a rrmv:ActionResult ;
 
 
 
-
 </section>
 
   
@@ -5330,9 +5266,9 @@ The examples in this section are fictitious; their sole purpose is to illustrate
 to ensure a clear understanding of the model.
 
 
-<h3>A Request expressed in a legislation</h3>
+<h3>A Requirement expressed in a legislation</h3>
 
-<div class="h3 examples" id="example_request">Example 1 - Relating a Request with legislation</div>
+<div class="h3 examples" id="example_request">Example 1 - Relating a Requirement with legislation</div>
 
 
 <p class="ednote" title="Multiple identifiers for legislation">
@@ -5343,18 +5279,18 @@ The fact that a legal document has many identifiers may raise implementation que
 It is unclear if this needs to be discussed in the context of RRMV.
 </p>
 
-<p class="ednote" title="lifecycle of Requests">
-A Request is an interpretation of the legislation with the objective to track reporting obligations.
+<p class="ednote" title="lifecycle of Requirements">
+A Requirement is an interpretation of the legislation with the objective to track reporting obligations.
 As such it has a strong connection with the legislation, but it is not the THE legislation. 
 If it would be the same then one should reflect on why the existing ELI machine readible annotations are not sufficient to track and followup reporting obligations.
 In the following we assume that this reflection has happened and that the conclusion was they are different entities with a different lifecylce, yet strongly connected.
 </p>
 
-<p class="ednote" title="Identity of Requests">
-Given the above context, it is assumed that requests are managed in systems outside the legislation. 
+<p class="ednote" title="Identity of Requirements">
+Given the above context, it is assumed that requirements are managed in systems outside the legislation. 
 It is not needed to annotate the legation with a RRMV interpretation to be formally adopted. 
-Therefore the structure of the identifier of Request is not determined by RRMV.  
-For the sake of readibility the examples assume that the URI is the identifier of the Request (a Linked Data implementation). 
+Therefore the structure of the identifier of Requirement is not determined by RRMV.  
+For the sake of readibility the examples assume that the URI is the identifier of the Requirement (a Linked Data implementation). 
 </p>
 
 <h3> Annotation example </h3>
@@ -5374,24 +5310,24 @@ This example can be downloaded at <a href="/html/examples/poladv.ttl">poladv.ttl
 @prefix time: &lt;http://www.w3.org/2006/time#&gt;.
 @prefix example: &lt;https://system.org/example#&gt; .
 
-example:Request0032024R0900 a rrmv:Request ;
+example:Requirement0032024R0900 a rrmv:Requirement ;
     rrmv:hasAnnotation "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service require the sponsor, or providers of advertising services acting on behalf of sponsors, to provide the declaration in accordance with paragraph 1 of this Article and the relevant information necessary to comply with Articles 9(1), 11(1) and 12(1). That information shall be transmitted in a complete and accurate manner and without undue delay."@en ;
-    rrmv:hasURI "https://system.org/example#Request0032024R0900"^^xsd:anyURI ;
+    rrmv:hasURI "https://system.org/example#Requirement0032024R0900"^^xsd:anyURI ;
     rrmv:produces example:Action0032024R0900 ;
     dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
     dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/002&gt; .
 
-example:Request0132024R0900 a rrmv:Request ;
+example:Requirement0132024R0900 a rrmv:Requirement ;
     rrmv:hasAnnotation "Sponsors shall provide and ensure the accuracy of the information necessary for the providers of political advertising services to comply with Article 9(1), points (a), (d), (e) and (f), Article 11(1), points (a) to (d), and Article 12(1), points (a), (b), (c), (e), (h) and (k), before or during the period of publication, delivery, or dissemination of the political advertisement. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that information which it has transmitted has changed, it shall ensure that updated information is transmitted to the relevant provider of political advertising services in a timely, complete and accurate manner. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher."@en ;
-    rrmv:hasURI "https://system.org/example#Request0132024R0900"^^xsd:anyURI ;
+    rrmv:hasURI "https://system.org/example#Requirement0132024R0900"^^xsd:anyURI ;
     rrmv:produces example:Action0132024R0900 ;
     dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
     dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/003&gt; .
 
 
-example:Request0232024R0900 a rrmv:Request ;
+example:Requirement0232024R0900 a rrmv:Requirement ;
     rrmv:hasAnnotation "Providers of political advertising services shall ensure that the information referred to in Article 9(1) is transmitted in a timely, complete and accurate manner to political advertising publishers to enable them to comply with their obligations under this Regulation. Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process. When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher."@en ;
-    rrmv:hasURI "https://system.org/example#Request0232024R0900"^^xsd:anyURI ;
+    rrmv:hasURI "https://system.org/example#Requirement0232024R0900"^^xsd:anyURI ;
     rrmv:produces example:Action0232024R0900,
         example:Action0332024R0900 ;
     dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
@@ -5470,7 +5406,177 @@ rrmv-codes:bearer a  rrmv:RoleType ;
 </aside>
 
 
+<h3>ReportNet example - temporal representation</h3>
+This example focusses on the use of the temporal specifications to denote the temporal aspects of a Requirement.
 
+According to the 
+<i> Regulation (EU) 2018/1999 of the European Parliament and of the Council of 11 December 2018 on the Governance of the Energy Union and Climate Action, amending Regulations (EC) No 663/2009 and (EC) No 715/2009 of the European Parliament and of the Council, Directives 94/22/EC, 98/70/EC, 2009/31/EC, 2009/73/EC, 2010/31/EU, 2012/27/EU and 2013/30/EU of the European Parliament and of the Council, Council Directives 2009/119/EC and (EU) 2015/652 and repealing Regulation (EU) No 525/2013 of the European Parliament and of the Council (Text with EEA relevance.)  </i> shall 
+
+(article 26) “By 31 July 2021, and every year thereafter (year X), Member States shall report to the Commission their approximated greenhouse gas inventories for the year X-1. For the purposes of this paragraph, the Commission shall, on the basis of the Member States' approximated greenhouse gas inventories or, if a Member State has not communicated its approximated inventories by that date, on the basis of its own estimates, annually compile a Union approximated greenhouse gas inventory. The Commission shall make that information available to the public by 30 September every year”.
+
+<p/>
+This requirement initiates an action with a yearly deadline starting from 31 July 2021.
+Encoding this temporal information using the RRMV temporal specification is as follows.
+
+
+<aside class="example" title="Temporal information - encoding 1">
+<pre class="nohighlight turtle">
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+@prefix time: &lt;http://www.w3.org/2006/time#&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+@prefix rrmv: &lt;http://data.europa.eu/2qy/rrmv#&gt; .
+@prefix rrmv-codes: &lt;http://data.europa.eu/2qy/rrmv-codes#&gt; .
+
+@prefix example: &lt;https://system.org/example#&gt; .
+
+example:action1 a rrmv:Action;
+   rrmv:atTime [
+      a rrmv:InstantSpec;
+      rrmv:hasFunction rrmv-codes:deadline;
+      xxx:moment "2021-07-31"^^xsd:date; # TBD
+      rrmv:hasFrequency [
+          a rrmv:Frequency;
+          rrmv:value "1";
+          rrmv:unit  rrmv-codes:year # TBD
+         ]
+      ] 
+
+</pre>
+</aside>
+
+This describes a collection of deadlines 31 July 2021, 31 July 2022, 31 July 2023, ... with no end.
+
+
+<aside class="example" title="Temporal information - encoding 2">
+<pre class="nohighlight turtle">
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+@prefix time: &lt;http://www.w3.org/2006/time#&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+@prefix rrmv: &lt;http://data.europa.eu/2qy/rrmv#&gt; .
+@prefix rrmv-codes: &lt;http://data.europa.eu/2qy/rrmv-codes#&gt; .
+
+@prefix example: &lt;https://system.org/example#&gt; .
+
+example:action1 a rrmv:Action;
+   rrmv:atTime [
+      rrmv:hasFunction rrmv-codes:deadline;
+      a rrmv:InstantSpec;
+      rrmv:starts [
+         a rrmv:InstantSpec;
+         xxx:moment "2021-07-31"^^xsd:date; # TBD
+         ];
+      rrmv:hasFrequency [
+          a rrmv:Frequency;
+          rrmv:value "1";
+          rrmv:unit  rrmv-codes:year # TBD
+         ]
+      ] 
+
+</pre>
+</aside>
+
+
+
+<aside class="example" title="Temporal information - encoding 3">
+<pre class="nohighlight turtle">
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+@prefix time: &lt;http://www.w3.org/2006/time#&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+@prefix rrmv: &lt;http://data.europa.eu/2qy/rrmv#&gt; .
+@prefix rrmv-codes: &lt;http://data.europa.eu/2qy/rrmv-codes#&gt; .
+
+@prefix example: &lt;https://system.org/example#&gt; .
+
+[] a oa:Annotation;
+    oa:hasBody "31 July 2021";
+    oa:hasTarget example:action1TS1.
+
+[] a oa:Annotation;
+    oa:hasBody "every year thereafter (year X)";
+    oa:hasTarget example:action1TS2.
+
+example:action1 a rrmv:Action;
+   rrmv:atTime [
+      rrmv:hasFunction rrmv-codes:deadline;
+      a rrmv:InstantSpec;
+      rrmv:starts example:action1TS1; 
+      rrmv:hasFrequency example:action1TS2
+      ] .
+
+example:action1TS1 a rrmv:InstantSpec;
+      xxx:moment "2021-07-31"^^xsd:date. #TBD 
+
+example:action1TS2  a rrmv:Frequency;
+      rrmv:value "1";
+      rrmv:unit  rrmv-codes:year. # TBD
+
+</pre>
+</aside>
+
+Other temporal patterns.
+
+<aside class="example" title="Temporal information - encoding 3">
+<pre class="nohighlight turtle">
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+@prefix time: &lt;http://www.w3.org/2006/time#&gt;.
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+@prefix rrmv: &lt;http://data.europa.eu/2qy/rrmv#&gt; .
+@prefix rrmv-codes: &lt;http://data.europa.eu/2qy/rrmv-codes#&gt; .
+
+@prefix example: &lt;https://system.org/example#&gt; .
+
+[] a oa:Annotation;
+    oa:hasBody "not earlier than 31 July 2021";
+    oa:hasTarget example:action1TS1.
+
+example:action1 a rrmv:Action;
+   rrmv:atTime [
+      a rrmv:InstantSpec;
+      rrmv:starts example:action1TS1; 
+      ] .
+
+example:action1TS1 a rrmv:InstantSpec;
+      xxx:moment "2021-07-31"^^xsd:date. #TBD 
+
+[] a oa:Annotation;
+    oa:hasBody "9 months after the directive went into force";
+    oa:hasTarget example:action1TS1.
+
+example:action1 a rrmv:Action;
+   rrmv:atTime [
+      a rrmv:TemporalEntitySpec;
+      rrmv:after example:action1TS1; 
+      ] .
+
+example:action1TS1 a rrmv:DurationSpec;
+      rrmv:hasDuration "P9M"^^xsd:duration;
+      rrmv:after [ 
+          a rrmv:InstantSpec; 
+          rrmv:externalEvent true
+          ].
+
+</pre>
+</aside>
 
 </section>
 
@@ -5512,7 +5618,7 @@ The provided SHACL shapes allow to check whether data expressed in a RDF seriali
 As it should be possible for RRMV conformance to transform the data exchange in RDF, these SHACL shapes can be used in any data exchange context.
 However, likewise the use of the JSON-LD context, the provided SHACL shapes provide only a start point for implementers. 
 <p/>
-The file <a href="/RRMV/releases/0.2.0/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> is the generated SHACL representation.
+The file <a href="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> is the generated SHACL representation.
 
 
 <p/>
@@ -5524,9 +5630,9 @@ The file <a href="/RRMV/releases/0.2.0/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> 
 <section id="owl-representation" class="informative">
 <h2>OWL Representation</h2>
 
-A OWL representation that corresponds to this specification can be found at <a href="/RRMV/releases/0.2.0/html/rrmv.owl">rrmv.owl</a>.
+A OWL representation that corresponds to this specification can be found at <a href="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/html/rrmv.owl">rrmv.owl</a>.
 <p/>
-The code lists are availables in the file <a href="/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
+The code lists are availables in the file <a href="https://semiceu.github.io/uri.semic.eu-generated/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
 
 </section>
 
@@ -5676,8 +5782,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Agent">Agent</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Agent</div></td>
 								<td></td>
-								<td><a href="#Agent.hastype">has type </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasType</div></td>
+								<td><a href="#Agent.hascategory">has category </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasCategory</div></td>
 							</tr>
 						
 					
@@ -5741,17 +5847,6 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 							</tr>
 						
 					
-				
-			</tr>
-		
-				
-					<tr>
-						<td><a href="#AgentType">Agent Type</a></td>
-						<td><div class="shorten">http://data.europa.eu/2qy/rrmv#AgentType</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
 				
 			</tr>
 		
@@ -5880,7 +5975,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 		
 				
 					<tr>
-						<td><a href="#InstantTemportalEntitySpecification">Instant Temportal Entity Specification</a></td>
+						<td><a href="#InstantTemporalEntitySpecification">Instant Temporal Entity Specification</a></td>
 						<td><div class="shorten">http://data.europa.eu/2qy/rrmv#InstantSpec</div></td>
 						<td></td>
 						<td></td>
