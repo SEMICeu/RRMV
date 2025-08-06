@@ -197,7 +197,7 @@
       prevVersionURI: "https://semiceu.github.io/rrmv/releases/0.1.1/",
       latestVersion: "https://semiceu.github.io/RRMV/releases/0.2.0",
       specStatus: "base",
-      publishDate: "2025-07-04",
+      publishDate: "2025-07-30",
       editors: myeditors,
       authors: myauthors,
       otherLinks: [
@@ -411,7 +411,7 @@ In support of this initiative, the European Commission has identified streamlini
 <section id="specstatus">
   <h2>Status</h2>
     <p>
-	    This application profile has the status SEMIC Working Draft published at 2025-07-04.
+	    This application profile has the status SEMIC Working Draft published at 2025-07-30.
     </p>
     <p>
       Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="RRMV">Changelog</a>.
@@ -427,9 +427,17 @@ In support of this initiative, the European Commission has identified streamlini
     </h2>
     
         <p>
-        Copyright © 2024 European Union. All material in this repository is published under the license <a href="https://spdx.org/licenses/EUPL-1.2">EUPL 1.2</a>, unless explicitly otherwise mentioned
+	<!--
+            <span rel="dct:type"
+                  property="dct:title"
+                  href="http://purl.org/dc/dcmitype/Text"
+                  xmlns:dct="http://purl.org/dc/terms/">
+		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
+	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
+	-->
+             Copyright © 2025 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
         </p>
-
+    
 </section>
 
 
@@ -691,7 +699,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    An Action valid within a time interval.
+                                    An action or an agent role is at a specific time if it occurs, is valid, or is relevant at that particular point in time or during a specific time period. 
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1060,7 +1068,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Title of the action result
+                                    The title of the ActionResult.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1263,7 +1271,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Connects the Agent to its AgentCategory.
+                                    A property connecting the Agent to its AgentCategory.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1469,7 +1477,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The agent for which this AgentRole applies.
+                                    The property linking a particular Role to Agent. 
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1522,7 +1530,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The property linking an Agent to Role.
+                                    The property linking a Agent to Role 
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1697,7 +1705,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change.
+                                    Indicates that this requirement  legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1750,7 +1758,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The topic of the requirement
+                                    A requirement has a topic if the requirement is related to or pertains to a specific concept or subject matter. 
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1856,7 +1864,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     1..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    TBD
+                                    A related resource in which the described resource is physically or logically included.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1909,7 +1917,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     1..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    	A related resource in which the described resource is physically or logically included.
+                                    A Requirement is part of an Expression if the requirement is a component, provision, or clause of that Expression
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2015,7 +2023,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Indicates a somehow related other document, not necessarily a legal resource.
+                                     Indicates a somehow related other requirement.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2449,7 +2457,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The function the temporal infomation plays
+                                     The function played by the TemporalEntitySpecification, such as a deadline or a validity period.
                                 </td>
                                 <td property="skos:scopeNote">
                                     For instance as deadline, moment of entering into force, etc.
@@ -2555,7 +2563,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Indicates whether a temporal aspect exists but is undefined.
+                                     Indicates whether a temporal aspect exists but is undefined or it depends on an event external to the legislative corpus.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2765,7 +2773,12 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
    Supportive Entities
 </h2>
 The supportive entities are supporting the main entities in the Application Profile. 
-They are included in the Application Profile because they form the range of properties.
+The scope and objective of the Application profile is fully covered with the main entities.
+The listed entities are supporttive because they form the range of properties 
+or are detailed subclasses exploring specific aspects of some use cases. 
+In this application profile, the supported entities are those that are defined in the same namespace as the main entities.
+Those that are imported are listed in a subsequent section.
+
 
 
 
@@ -2827,6 +2840,1098 @@ They are included in the Application Profile because they form the range of prop
 
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="DurationTemporalEntitySpecification">
+                <a href="http://data.europa.eu/2qy/rrmv#DurationSpec"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#DurationSpec"
+                   data-placement="right">Duration Temporal Entity Specification</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20DurationTemporalEntitySpecification&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An continuous amount of time without reference to specific temporal points. It defines a time interval in terms of length rather than absolute positioning in time, used to express concepts such as 'within 30 days', 'for 6 months', or other relative temporal requirements that are not anchored to calendar dates.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#DurationTemporalEntitySpecification.hasduration">has duration</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="DurationTemporalEntitySpecification.hasduration"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasDuration"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has duration%20in%20Duration Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23DurationTemporalEntitySpecification.hasduration" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasDuration"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasDuration"
+                                           data-placement="right">
+                                        has duration</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#xsd%3Aduration" data-placement="right">xsd:duration</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Links a duration specification to its duration value, quantifying the time periods
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Frequency">
+                <a href="http://data.europa.eu/2qy/rrmv#Frequency"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#Frequency"
+                   data-placement="right">Frequency</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Frequency&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The rate at which a temporal entity recurs or repeats over a specified period of time
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Frequency.hasunit">has unit</a>
+                            , <a href="#Frequency.value">value</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Frequency.hasunit"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasUnit"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has unit%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Frequency.hasunit" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasUnit"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasUnit"
+                                           data-placement="right">
+                                        has unit</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Concept" data-placement="right">Concept</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The unit of the Frequency
+                                </td>
+                                <td property="skos:scopeNote">
+                                    e.g. Quarter
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Frequency.value"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#value"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20value%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Frequency.value" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#value"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#value"
+                                           data-placement="right">
+                                        value</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The value of the frequency.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="InstantTemporalEntitySpecification">
+                <a href="http://data.europa.eu/2qy/rrmv#InstantSpec"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#InstantSpec"
+                   data-placement="right">Instant Temporal Entity Specification</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20InstantTemporalEntitySpecification&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A set point in time, representing a single moment without duration. It can be used, for example, when a normative provision establishes a specific temporal reference, such as a deadline, start time, or activation moment. This class is appropriate for establishing unique temporal reference points for normative provisions and other use cases.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="IntervalTemporalEntitySpecification">
+                <a href="http://data.europa.eu/2qy/rrmv#IntervalSpec"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#IntervalSpec"
+                   data-placement="right">Interval Temporal Entity Specification</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20IntervalTemporalEntitySpecification&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A segment of time with determined start and end points, representing a period of time. This class is appropriate for modelling validity periods, time windows for regulatory compliance, and reporting cycles with defined temporal boundaries, among others.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#IntervalTemporalEntitySpecification.hasend">has end</a>
+                            , <a href="#IntervalTemporalEntitySpecification.hasstart">has start</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="IntervalTemporalEntitySpecification.hasend"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasEnd"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has end%20in%20Interval Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23IntervalTemporalEntitySpecification.hasend" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasEnd"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasEnd"
+                                           data-placement="right">
+                                        has end</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Connects an interval to its concluding instant.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="IntervalTemporalEntitySpecification.hasstart"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasStart"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has start%20in%20Interval Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23IntervalTemporalEntitySpecification.hasstart" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasStart"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasStart"
+                                           data-placement="right">
+                                        has start</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Connects an interval to its starting instant.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="ResultType">
+                <a href="http://data.europa.eu/2qy/rrmv#ResultType"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#ResultType"
+                   data-placement="right">Result Type</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20ResultType&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The kind of Action Result
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        Associates entities with their class in a controlled vocabulary. 
+                    </dd>
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Concept">Concept</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Role">
+                <a href="http://data.europa.eu/2qy/rrmv#Role"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#Role"
+                   data-placement="right">Role</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Role&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The function played by an Agent involved in an Action.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Role.hastype">has type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Role.hastype"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasType"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Role.hastype" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
+                                           data-placement="right">
+                                        has type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#RoleType" data-placement="right">Role Type</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A kind of Role
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+				        P
+				    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="RoleType">
+                <a href="http://data.europa.eu/2qy/rrmv#RoleType"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#RoleType"
+                   data-placement="right">Role Type</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20RoleType&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The kind of Role played by an Agent.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Concept">Concept</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="Status">
+                <a href="http://data.europa.eu/2qy/rrmv#Status"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#Status"
+                   data-placement="right">Status</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Status&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The legal status of Action.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Concept">Concept</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="TemporalFunction">
+                <a href="http://data.europa.eu/2qy/rrmv#TemporalFunction"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#TemporalFunction"
+                   data-placement="right">Temporal Function</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20TemporalFunction&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A specific temporal role or function. It classifies temporal specifications according to their functional meaning in the normative provisions, such as "deadline", validity period, or reporting frequency. This classification helps to interpret the meaning of various temporal specifications within the regulatory framework, among others.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        for instance as deadline, moment of entering into force, etc.
+                    </dd>
+                
+                
+                    <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Concept">Concept</a>
+                                
+                        </dd>
+                    
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<section>
+<h2>
+   Supportive Imported Entities
+</h2>
+The supportive entities are supporting the main entities in the Application Profile. 
+The scope and objective of the Application profile is fully covered with the main entities.
+The listed entities are supporttive because they form the range of properties 
+or are detailed subclasses exploring specific aspects of some use cases. 
+In this application profile, the supported imported entities are those that are defined in another namespace as the main entities.
+
+
+
+
+
+
+
 
 
 
@@ -2969,7 +4074,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="Annotation.hastarget"
                                 typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/oa#hasTarget"
+                                resource="http://data.europa.eu/2qy/rrmv#hasTarget"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -2979,9 +4084,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://www.w3.org/ns/oa#hasTarget"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasTarget"
                                            data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/oa#hasTarget"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasTarget"
                                            data-placement="right">
                                         has target</a>
                                 </td>
@@ -3193,160 +4298,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="DurationTemporalEntitySpecification">
-                <a href="http://data.europa.eu/2qy/rrmv#DurationSpec"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#DurationSpec"
-                   data-placement="right">Duration Temporal Entity Specification</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20DurationTemporalEntitySpecification&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    An continuous amount of time without reference to specific temporal points. It defines a time interval in terms of length rather than absolute positioning in time, used to express concepts such as 'within 30 days', 'for 6 months', or other relative temporal requirements that are not anchored to calendar dates.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#DurationTemporalEntitySpecification.hasduration">has duration</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="DurationTemporalEntitySpecification.hasduration"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasDuration"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has duration%20in%20Duration Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23DurationTemporalEntitySpecification.hasduration" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasDuration"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasDuration"
-                                           data-placement="right">
-                                        has duration</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#xsd%3Aduration" data-placement="right">xsd:duration</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    Links a duration specification to its duration value, quantifying the time periods
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
 
 
    
@@ -3398,470 +4349,7 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="Frequency">
-                <a href="http://data.europa.eu/2qy/rrmv#Frequency"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#Frequency"
-                   data-placement="right">Frequency</a>
 
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Frequency&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The rate at which a temporal entity recurs or repeats over a specified period of time
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Frequency.hasunit">has unit</a>
-                            , <a href="#Frequency.value">value</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Frequency.hasunit"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasUnit"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has unit%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Frequency.hasunit" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasUnit"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasUnit"
-                                           data-placement="right">
-                                        has unit</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Concept" data-placement="right">Concept</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The unit of the Frequency
-                                </td>
-                                <td property="skos:scopeNote">
-                                    e.g. Quarter
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="Frequency.value"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#value"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20value%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Frequency.value" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#value"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#value"
-                                           data-placement="right">
-                                        value</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The value of the frequency.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="InstantTemporalEntitySpecification">
-                <a href="http://data.europa.eu/2qy/rrmv#InstantSpec"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#InstantSpec"
-                   data-placement="right">Instant Temporal Entity Specification</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20InstantTemporalEntitySpecification&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A set point in time, representing a single moment without duration. It can be used, for example, when a normative provision establishes a specific temporal reference, such as a deadline, start time, or activation moment. This class is appropriate for establishing unique temporal reference points for normative provisions and other use cases.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="IntervalTemporalEntitySpecification">
-                <a href="http://data.europa.eu/2qy/rrmv#IntervalSpec"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#IntervalSpec"
-                   data-placement="right">Interval Temporal Entity Specification</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20IntervalTemporalEntitySpecification&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A segment of time with determined start and end points, representing a period of time. This class is appropriate for modelling validity periods, time windows for regulatory compliance, and reporting cycles with defined temporal boundaries, among others.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#TemporalEntitySpecification">Temporal Entity Specification</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#IntervalTemporalEntitySpecification.hasend">has end</a>
-                            , <a href="#IntervalTemporalEntitySpecification.hasstart">has start</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="IntervalTemporalEntitySpecification.hasend"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasEnd"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has end%20in%20Interval Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23IntervalTemporalEntitySpecification.hasend" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasEnd"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasEnd"
-                                           data-placement="right">
-                                        has end</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Connects an interval to its concluding instant.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="IntervalTemporalEntitySpecification.hasstart"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasStart"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has start%20in%20Interval Temporal Entity Specification&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23IntervalTemporalEntitySpecification.hasstart" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasStart"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasStart"
-                                           data-placement="right">
-                                        has start</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#InstantTemporalEntitySpecification" data-placement="right">Instant Temporal Entity Specification</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Connects an interval to its starting instant.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
 
 
 
@@ -4383,318 +4871,6 @@ Note that ELI ontology accommodates different point of view on what should be co
 
 
 
-   
-        <section>
-            <h3 id="ResultType">
-                <a href="http://data.europa.eu/2qy/rrmv#ResultType"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#ResultType"
-                   data-placement="right">Result Type</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20ResultType&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The kind of Action Result
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#Concept">Concept</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="Role">
-                <a href="http://data.europa.eu/2qy/rrmv#Role"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#Role"
-                   data-placement="right">Role</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Role&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    Function played by an Agent involved in a Requirement.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Role.hastype">has type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Role.hastype"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasType"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.2.0%23Role.hastype" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-placement="right">
-                                        has type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#RoleType" data-placement="right">Role Type</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A kind of Role
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-				        P
-				    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="RoleType">
-                <a href="http://data.europa.eu/2qy/rrmv#RoleType"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#RoleType"
-                   data-placement="right">Role Type</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20RoleType&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The kind of Role played by an Agent.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#Concept">Concept</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="Status">
-                <a href="http://data.europa.eu/2qy/rrmv#Status"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#Status"
-                   data-placement="right">Status</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Status&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    Status of Action.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#Concept">Concept</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
 
 
 
@@ -4702,64 +4878,6 @@ Note that ELI ontology accommodates different point of view on what should be co
 
 
 
-   
-        <section>
-            <h3 id="TemporalFunction">
-                <a href="http://data.europa.eu/2qy/rrmv#TemporalFunction"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#TemporalFunction"
-                   data-placement="right">Temporal Function</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20TemporalFunction&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A specific temporal role or function. It classifies temporal specifications according to their functional meaning in the normative provisions, such as deadline, validity period, or reporting frequency. This classification helps to interpret the meaning of various temporal specifications within the regulatory framework, among others.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        for instance as deadline, moment of entering into force, etc.
-                    </dd>
-                
-                
-                    <dt>
-                        Subclass of
-                        <dt>
-                            <dd> <a href="#Concept">Concept</a>
-                                
-                        </dd>
-                    
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
 
 
 
@@ -5140,6 +5258,15 @@ Note that ELI ontology accommodates different point of view on what should be co
 -->
 
  
+  <section id="owl-representation" class="normative">
+<h2>OWL Representation</h2>
+
+The authoritative representation of the ontology is the OWL file downloadable at <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/rrmv"> the EU Vocabularies Portal</a>.
+
+The OWL file also includes the initial version of the SKOS [[[skos-reference]]] concepts list, which can be used to further extend and complement the ontology.
+
+</section>
+
   <section id="controlled-vocs" class="informative">
 
 
@@ -5152,25 +5279,33 @@ In the context of this specification, classes mapped on the URI <code>skos:Conce
 In addition, the following controlled vocabularies MUST be used for the properties listed in the table below. 
 The <i>MUST be used</i> interpretation means that the range value space of the property is closed under the controlled vocabulary. 
 Validation systems SHOULD produce errors.
+<p/>
+The controlled vocabularies are under development. Currently they are distributed as part of the OWL representation [[[#owl-representation]]]. 
 
 <table id="table-cv" class="simple">
-   <thead><tr><th>Property URI</th><th>Used for Class</th><th>Vocabulary name</th><th>Vocabulary URI</th><th>Usage note</th></tr></thead>
+   <thead><tr><th>Property URI</th><th>Used for Class</th><th>Codes are instances of Class </th><th>Usage note</th></tr></thead>
    <tbody>
-   <tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
-   <tr><td>rrmv:hasType</td><td><a href="#Role">Role</a></td><td><a href="">Role Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
-   <tr><td>rrmv:hasCategory</td><td><a href="#Agent">Agent</a></td><td><a href="">Agent Category</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
-   <tr><td>rrmv:hasstatus</td><td><a href="#Action">Action</a></td><td><a href="">Status</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   <tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="#ResultType">Result Type</a></td><td></td></tr>
+   <tr><td>rrmv:hasType</td><td><a href="#Role">Role</a></td><td><a href="#RoleType">Role Type</a></td><td></td></tr>
+   <tr><td>rrmv:hasCategory</td><td><a href="#Agent">Agent</a></td><td><a href="#AgentCategory">Agent Category</a></td><td></td></tr>
+   <tr><td>rrmv:hasstatus</td><td><a href="#Action">Action</a></td><td><a href="#Status">Status</a></td><td></td></tr>
    </tbody>
 </table>
 
-A first version of the controlled vocabularies can be downloaded as the file <a href="/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
 
 
 
 </section>
 
   <section class="informative">
-<h2>Annotations</h2>
+<h2>Examples</h2>
+In this section we illustrate the usage of the RRMV with examples.
+The examples in this section are fictitious; their sole purpose is to illustrate the use of the application profile 
+to ensure a clear understanding of the model.
+
+
+<section>
+<h3>Annotations</h3>
 In this section we illustrate how the texts from legal documents are connected with the RRMV main classes.
 
 The objective of RRMV is to provide a structured representation for legal expressions that mandate an activity.
@@ -5179,15 +5314,17 @@ Nevertheless the relationships are sufficient for the main use cases, it is ofte
 These textual extracts aid in the trustbuilding and the editorial process, establishing RRMV instances.
 
 
-<h3>The Web Annotation Vocabulary for the RRMV context</h3>
-While originally RRMV used an own specific property, called <i>has annotation</i>, to record the text on which the instance was based, it has been decided to apply the Web Annotation Vocabulary [annotation-vocab] for this purpose.
-For RRMV the usage of this vocabulary will be restricted to the following:
-<ul>
-<li>An Annotation has a body to record the legal text that is relevant</li>
-<li>An Annotation has as target the RRMV instance for which the legal text is the basis of existance</li>
-</ul>
-Other more elaborated annotation functionality is considered beyond the core needs for RRMV.
+<h4>The Web Annotation Vocabulary for the RRMV context</h4>
+The RRMV utilizes the Web Annotation Vocabulary [annotation-vocab] to establish connections between the classes of the ontology and the relevant portions of the legal text. In the context of the RRMV, the usage of this vocabulary has been restricted in the following ways:
 
+<ul>
+<li>An Annotation has a body that serves to record the pertinent legal text.</li>
+<li>An Annotation has a target that is the RRMV instance for which the legal text provides the foundation.</li>
+</ul>
+Additional functionalities of the Web Annotation Vocabulary are not considered essential for the RRMV and are therefore beyond its scope.
+
+
+<h4>Example annotations</h4>
 
 <aside class="example" title="Illustration of the use of the Web Annotation Vocabulary for legislation CELEX:32024R0900">
 <pre class="nohighlight turtle">
@@ -5235,171 +5372,78 @@ example:ActionResult032024R0900 a rrmv:ActionResult .
 
 </section>
 
-  
-  <section class="informative">
-<h2>Example</h2>
-In this section we illustrate the usage of the RRMV with examples.
-The examples in this section are fictitious; their sole purpose is to illustrate the use of the application profile 
-to ensure a clear understanding of the model.
 
+<h3>Running example context</h3>
+To make the examples more illustrative the RRMV use is illustrated for the following concrete case. 
 
-<!--  to be removed and adjusted in the example section 
-<h3>A Requirement expressed in a legislation</h3>
-
-<div class="h3 examples" id="example_request">Example 1 - Relating a Requirement with legislation</div>
-
-
-<p class="ednote" title="Multiple identifiers for legislation">
-The example uses the ELI as unique reference for the legal document: 
-<code>http://data.europa.eu/eli/reg/2016/1011/oj</code>.
-Question to be raised is whether implementations should always use this one? Or other like the CELEX are allowed?
-The fact that a legal document has many identifiers may raise implementation questions.
-It is unclear if this needs to be discussed in the context of RRMV.
+<p>
+According to the 
+<br/>
+<i> Regulation (EU) 2018/1999 of the European Parliament and of the Council of 11 December 2018 on the Governance of the Energy Union and Climate Action, amending Regulations (EC) No 663/2009 and (EC) No 715/2009 of the European Parliament and of the Council, Directives 94/22/EC, 98/70/EC, 2009/31/EC, 2009/73/EC, 2010/31/EU, 2012/27/EU and 2013/30/EU of the European Parliament and of the Council, Council Directives 2009/119/EC and (EU) 2015/652 and repealing Regulation (EU) No 525/2013 of the European Parliament and of the Council (Text with EEA relevance.)  </i> 
+<p/> shall 
+<p>
+<i>
+(article 26) “By 31 July 2021, and every year thereafter (year X), Member States shall report to the Commission their approximated greenhouse gas inventories for the year X-1. For the purposes of this paragraph, the Commission shall, on the basis of the Member States' approximated greenhouse gas inventories or, if a Member State has not communicated its approximated inventories by that date, on the basis of its own estimates, annually compile a Union approximated greenhouse gas inventory. The Commission shall make that information available to the public by 30 September every year”.
+</i></p>
+This requirement initiates an action with a yearly deadline starting from 31 July 2021.
 </p>
 
-<p class="ednote" title="lifecycle of Requirements">
-A Requirement is an interpretation of the legislation with the objective to track reporting obligations.
-As such it has a strong connection with the legislation, but it is not the THE legislation. 
-If it would be the same then one should reflect on why the existing ELI machine readible annotations are not sufficient to track and followup reporting obligations.
-In the following we assume that this reflection has happened and that the conclusion was they are different entities with a different lifecylce, yet strongly connected.
-</p>
+In the next subsections this context will be used to demonstrate the use of RRMV.
 
-<p class="ednote" title="Identity of Requirements">
-Given the above context, it is assumed that requirements are managed in systems outside the legislation. 
-It is not needed to annotate the legation with a RRMV interpretation to be formally adopted. 
-Therefore the structure of the identifier of Requirement is not determined by RRMV.  
-For the sake of readibility the examples assume that the URI is the identifier of the Requirement (a Linked Data implementation). 
-</p>
+<h3>Main entities example</h3>
+For the running example the following core structure can be constructed according to RRMV.
+ 
+<aside class="example" title="Main entities example">
+<pre class="highlight turtle">
+@prefix ns0: <http://data.europa.eu/2qy/rrmv#> .
 
-<h3> Annotation example </h3>
+<https://system.org/example#REG20181999OJART26PAR2>
+  ns0:hasAction _:genid1 ;
+  ns0:isPartOf <http://data.europa.eu/eli/reg/2018/1999/oj/art_26/par_2> ;
+  a ns0:Requirement .
 
-This example can be downloaded at <a href="/html/examples/poladv.ttl">poladv.ttl</a>. 
+[]
+  ns0:hasBody "By 31 July 2021, ... year X-1."@en ;
+  ns0:hasTarget <https://system.org/example#REG20181999OJART26PAR2> .
 
-<aside class="example" title="Annotation for legislation CELEX:32024R0900">
-<pre class="nohighlight turtle">
+_:genid1
+  ns0:atTime _:genid3 ;
+  ns0:hasAgentRole [
+    ns0:forAgent _:genid12 ;
+    ns0:withRole ns0:addressee
+  ], [
+    ns0:forAgent _:genid8 ;
+    ns0:withRole ns0:addresser
+  ] ;
+  ns0:hasResult _:genid6 .
 
-@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
-@prefix eli: &lt;http://data.europa.eu/eli/ontology#&gt; .
-@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix rrmv: &lt;http://data.europa.eu/2qy/rrmv#&gt; .
-@prefix rrmv-codes: &lt;http://data.europa.eu/2qy/rrmv-codes#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-@prefix time: &lt;http://www.w3.org/2006/time#&gt;.
-@prefix example: &lt;https://system.org/example#&gt; .
+[]
+  ns0:hasBody "Member State"@en ;
+  ns0:hasTarget _:genid8 .
 
-example:Requirement0032024R0900 a rrmv:Requirement ;
-    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service require the sponsor, or providers of advertising services acting on behalf of sponsors, to provide the declaration in accordance with paragraph 1 of this Article and the relevant information necessary to comply with Articles 9(1), 11(1) and 12(1). That information shall be transmitted in a complete and accurate manner and without undue delay."@en ;
-    rrmv:hasURI "https://system.org/example#Requirement0032024R0900"^^xsd:anyURI ;
-    rrmv:produces example:Action0032024R0900 ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/002&gt; .
+[]
+  ns0:hasBody "approximated greenhouse gas inventories for the year X-1"@en ;
+  ns0:hasTarget _:genid6 .
 
-example:Requirement0132024R0900 a rrmv:Requirement ;
-    rrmv:hasAnnotation "Sponsors shall provide and ensure the accuracy of the information necessary for the providers of political advertising services to comply with Article 9(1), points (a), (d), (e) and (f), Article 11(1), points (a) to (d), and Article 12(1), points (a), (b), (c), (e), (h) and (k), before or during the period of publication, delivery, or dissemination of the political advertisement. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that information which it has transmitted has changed, it shall ensure that updated information is transmitted to the relevant provider of political advertising services in a timely, complete and accurate manner. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher."@en ;
-    rrmv:hasURI "https://system.org/example#Requirement0132024R0900"^^xsd:anyURI ;
-    rrmv:produces example:Action0132024R0900 ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/003&gt; .
+[]
+  ns0:hasBody "Member States shall report to the Commission"@en ;
+  ns0:hasTarget _:genid1 .
 
+[]
+  ns0:hasBody "By 31 July 2021, and every year hereafter"@en ;
+  ns0:hasTarget _:genid3 .
 
-example:Requirement0232024R0900 a rrmv:Requirement ;
-    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the information referred to in Article 9(1) is transmitted in a timely, complete and accurate manner to political advertising publishers to enable them to comply with their obligations under this Regulation. Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process. When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher."@en ;
-    rrmv:hasURI "https://system.org/example#Requirement0232024R0900"^^xsd:anyURI ;
-    rrmv:produces example:Action0232024R0900,
-        example:Action0332024R0900 ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj&gt; ;
-    dcterms:isPartOf &lt;http://data.europa.eu/eli/reg/2024/900/oj/article/010/paragraph/001&gt; .
-
-example:Action0032024R0900 a rrmv:Action ;
-    rrmv:hasActionResult example:ActionResult032024R0900 ;
-    rrmv:hasAnnotation "That information shall be transmitted in a complete and accurate manner and without undue delay."@en .
-
-example:ActionResult032024R0900 a rrmv:ActionResult ;
-    rrmv:hasAnnotation "That information"@en .
-
-example:Action0132024R0900 a rrmv:Action ;
-    rrmv:hasAnnotation "Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher."@en .
-
-example:Action0232024R0900 a rrmv:Action ;
-    rrmv:atTime example:PeriodOfTime232024R0900 ;
-    rrmv:hasActionResult example:ActionResult232024R0900 ;
-    rrmv:hasAgentRole example:Action2AgentRoleAddressee032024R0900,
-        example:Action2AgentRoleAddressee132024R0900,
-        example:Action2AgentRoleAddressee232024R0900,
-        example:Action2AgentRoleAddressee332024R0900,
-        example:Action2AgentRoleAddressee432024R0900,
-        example:Action2AgentRoleAddressee532024R0900,
-        example:Action2AgentRoleAddresser032024R0900,
-        example:Action2AgentRoleAddresser132024R0900 ;
-    rrmv:hasAnnotation "Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process."@en .
-
-example:ActionResult232024R0900 a rrmv:ActionResult ;
-    rrmv:hasAnnotation "the information referred"@en .
-
-example:PeriodOfTime232024R0900 a  time:ProperInterval;
-    rrmv:hasAnnotation "during the provision of the relevant service and in accordance with best practice and industry standards and , where technically possible"@en.
-
-example:Action2AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
-    rrmv:forAgent example:Agent232024R0900 ;
-    rrmv:withRole rrmv-codes:addressee .
-
-example:Agent232024R0900 a eli:Agent ;
-    rrmv:hasAnnotation "the_first_subparagraph"@en .
-
-example:Action0332024R0900 a rrmv:Action ;
-    rrmv:hasActionResult example:ActionResult332024R0900 ;
-    rrmv:hasAgentRole example:Action3AgentRoleAddressee032024R0900,
-        example:Action3AgentRoleAddresser032024R0900 ;
-    rrmv:hasAnnotation "When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher."@en .
-
-example:ActionResult332024R0900 a rrmv:ActionResult ;
-    rrmv:hasAnnotation "the relevant information"@en .
-
-example:Action3AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
-    rrmv:forAgent example:Agent932024R0900 ;
-    rrmv:withRole rrmv-codes:addressee .
-
-example:Action3AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
-    rrmv:forAgent example:Agent832024R0900 ;
-    rrmv:withRole rrmv-codes:addresser .
-
-example:Agent932024R0900 a eli:Agent ;
-    rrmv:hasAnnotation "the_political_advertising_publisher"@en . 
-
-example:Agent832024R0900 a eli:Agent ;
-    rrmv:hasAnnotation "the_sponsor"@en .
-
-rrmv-codes:addresser a  rrmv:RoleType ;
-   a skos:Concept.
-
-rrmv-codes:addressee a rrmv:RoleType ;
-   a skos:Concept.
-
-rrmv-codes:bearer a  rrmv:RoleType ;
-   a skos:Concept.
-
+[]
+  ns0:hasBody "the Commission"@en ;
+  ns0:hasTarget _:genid12 .
 
 </pre>
 </aside>
 
---!>
 
-
-<h3>ReportNet example - temporal representation</h3>
-This example focusses on the use of the temporal specifications to denote the temporal aspects of a Requirement.
-
-According to the 
-<br/>
-<i> Regulation (EU) 2018/1999 of the European Parliament and of the Council of 11 December 2018 on the Governance of the Energy Union and Climate Action, amending Regulations (EC) No 663/2009 and (EC) No 715/2009 of the European Parliament and of the Council, Directives 94/22/EC, 98/70/EC, 2009/31/EC, 2009/73/EC, 2010/31/EU, 2012/27/EU and 2013/30/EU of the European Parliament and of the Council, Council Directives 2009/119/EC and (EU) 2015/652 and repealing Regulation (EU) No 525/2013 of the European Parliament and of the Council (Text with EEA relevance.)  </i> i
-<br/> shall <p>
-
-(article 26) “By 31 July 2021, and every year thereafter (year X), Member States shall report to the Commission their approximated greenhouse gas inventories for the year X-1. For the purposes of this paragraph, the Commission shall, on the basis of the Member States' approximated greenhouse gas inventories or, if a Member State has not communicated its approximated inventories by that date, on the basis of its own estimates, annually compile a Union approximated greenhouse gas inventory. The Commission shall make that information available to the public by 30 September every year”.
-</p>
-
-<p/>
-This requirement initiates an action with a yearly deadline starting from 31 July 2021.
-Encoding this temporal information using the RRMV temporal specification is as follows.
+<h3>Temporal representation</h3>
+This section focusses on the use of the temporal specifications to denote the temporal aspects of a Requirement.
+Encoding the temporal information using the RRMV temporal specification is done as follows.
 
 
 <aside class="example" title="Temporal information - encoding 1">
@@ -5563,7 +5607,7 @@ example:action1TS1 a rrmv:DurationSpec;
 
 </section>
 
-  <ection class="informative">
+  <section class="informative">
   <h2>Support for implementation</h2>
 
 Implementing the RRMV data specification in a data exchange between two systems raises also technical questions.
@@ -5606,18 +5650,19 @@ The file <a href="/RRMV/releases/0.2.0/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> 
 
 <p/>
 
+<h4>Alternative visualisation</h4>
+To additionally illustrate the RRMV the following additional representation is provided.
+    <div>
+        <a href="/RRMV/releases/0.2.0/html/rrmv-v6.png"
+           target="_blank">
+            <img src="/RRMV/releases/0.2.0/html/rrmv-v6.png"/>
+        </a>
+    </div>
+
 
 </section>
 
 
-<section id="owl-representation" class="informative">
-<h2>OWL Representation</h2>
-
-A OWL representation that corresponds to this specification can be found at <a href="/RRMV/releases/0.2.0/html/rrmv.ttl">rrmv.ttl</a>.
-<p/>
-The code lists are availables in the file <a href="/RRMV/releases/0.2.0/html/rrmv-codes.ttl">rrmv-codes.ttl</a>.
-
-</section>
 
  
 
@@ -5861,7 +5906,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://www.w3.org/ns/oa#Annotation</div></td>
 								<td></td>
 								<td><a href="#Annotation.hastarget">has target </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/oa#hasTarget</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTarget</div></td>
 							</tr>
 						
 					
