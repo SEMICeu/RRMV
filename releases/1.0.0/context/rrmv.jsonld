@@ -9,6 +9,7 @@
     "DurationSpec": "http://data.europa.eu/2qy/rrmv#DurationSpec",
     "Expression": "http://data.europa.eu/eli/ontology#Expression",
     "Frequency": "http://data.europa.eu/2qy/rrmv#Frequency",
+    "Group": "http://data.europa.eu/2qy/rrmv#Group",
     "InstantSpec": "http://data.europa.eu/2qy/rrmv#InstantSpec",
     "IntervalSpec": "http://data.europa.eu/2qy/rrmv#IntervalSpec",
     "LangString": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -94,9 +95,6 @@
       "@id": "http://data.europa.eu/2qy/rrmv#externalEvent",
       "@type": "http://www.w3.org/2001/XMLSchema#boolean"
     },
-    "hasBody": {
-      "@id": "http://www.w3.org/ns/oa#hasBody"
-    },
     "hasCategory": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#hasCategory",
@@ -141,6 +139,15 @@
       "@id": "http://data.europa.eu/2qy/rrmv#meets",
       "@type": "@id"
     },
+    "oa:bodyValue": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/oa#bodyValue"
+    },
+    "oa:hasBody": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/oa#hasBody",
+      "@type": "@id"
+    },
     "overlaps": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#overlaps",
@@ -174,6 +181,11 @@
     "rrmv:hasFunction": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#hasFunction",
+      "@type": "@id"
+    },
+    "rrmv:hasMember": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/2qy/rrmv#rrmv:hasMember",
       "@type": "@id"
     },
     "rrmv:hasNext": {
