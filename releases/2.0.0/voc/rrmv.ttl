@@ -1,0 +1,343 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://data.europa.eu/2qy/rrmv>
+    a <http://www.w3.org/2002/07/owl#Ontology> .
+
+<http://data.europa.eu/2qy/rrmv#Action>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "An event with at least one agent that is participant in it in a given time."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#ActionResult>
+    <http://purl.org/vocab/vann/usageNote> "It could be an activity (e.g., to do something) or a physical or digital entity (e.g., report)."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The outcome of an Action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#Agent>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A legal subject, which refers to any entity involved in an Action, including but not limited to individual entities (such as natural persons or organizations) and groups of entities (such as classes of persons, organizations, or things)"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#AgentCategory>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The category of Agent."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#AgentRole>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A supportive class connecting agents with a role they play."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#DurationSpec>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A continuous amount of time without reference to specific temporal points. It defines a time interval in terms of length rather than absolute positioning in time, used to express concepts such as 'within 30 days', 'for 6 months', or other relative temporal requirements that are not anchored to calendar dates."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#Frequency>
+    <http://purl.org/vocab/vann/usageNote> "Specify both the numeric value and the unit to define how often an action recurs (e.g., value='1' with unit='Quarter' means 'once per quarter')."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which a temporal entity recurs or repeats over a specified period of time."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#Group>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Legal subjects involved in an Action that constitutes a group of entities, such as classes of persons, organisations or things"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#InstantSpec>
+    <http://purl.org/vocab/vann/usageNote> "Use this class for specific points in time such as '31 July 2021', 'the date of entry into force', or 'the moment of notification'. Unlike intervals, instants have no duration."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A set point in time, representing a single moment without duration. It can be used, for example, when a normative provision establishes a specific temporal reference, such as a deadline, start time, or activation moment. This class is appropriate for establishing unique temporal reference points for normative provisions and other use cases."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#IntervalSpec>
+    <http://purl.org/vocab/vann/usageNote> "While multiple start or end points are technically possible, typically an interval has one start and one end instant. Multiple values may be used to express alternative or conditional boundaries."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A segment of time with determined start and end points, representing a period of time. This class is appropriate for modelling validity periods, time windows for regulatory compliance, and reporting cycles with defined temporal boundaries, among others."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#Requirement>
+    <http://purl.org/vocab/vann/usageNote> "A Requirement represents a normative provision within a legal text that mandates, permits, or prohibits specific actions. It typically corresponds to an article, paragraph, or clause that establishes obligations for identified agents. For example, Article 26(2) of Regulation (EU) 2018/1999 constitutes a reporting Requirement because it mandates Member States to submit greenhouse gas inventories to the Commission. Each Requirement is linked to the specific portion(s) of the legal text through has URI and must produce at least one Action representing the mandated activity."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of legal source expression including a mandate that produces at least one Action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#ResultType>
+    <http://purl.org/vocab/vann/usageNote> "Associates entities with their class in a controlled vocabulary."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The kind of Action Result"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#Role>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The function played by an Agent involved in an Action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#RoleType>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The kind of Role played by an Agent."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#Status>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The legal status of an Action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#TemporalEntitySpec>
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity specification serving as an abstract class for all temporal specifications. It includes specifications for instants, intervals, frequency, and durations, functioning as the structure for expressing temporal constraints related to normative provisions and other use cases."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> .
+
+<http://data.europa.eu/2qy/rrmv#TemporalFunction>
+    <http://purl.org/vocab/vann/usageNote> "for instance as deadline, moment of entering into force, etc."@en ;
+    a <http://www.w3.org/2002/07/owl#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A specific temporal role or function. It classifies temporal specifications according to their functional meaning in the normative provisions, such as \"deadline\", \"validity period\", or \"reporting frequency\". This classification helps to interpret the meaning of various temporal specifications within the regulatory framework, among others."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#after>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that one temporal entity specification occurs following another one."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#atTime>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "An Action or a Role is valid within a time interval."@en, "An action or an agent role is at a specific time if it occurs, is valid, or is relevant at that particular point in time or during a specific time period."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Action>, <http://data.europa.eu/2qy/rrmv#AgentRole> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#before>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that one temporal entity specification precedes another one."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#changes>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that this requirement  legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Requirement> .
+
+<http://data.europa.eu/2qy/rrmv#ends>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes that one temporal entity specification marks the conclusion of another one."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#externalEvent>
+    <http://purl.org/vocab/vann/usageNote> "Set to true when the temporal specification depends on events outside the regulatory framework's direct control (e.g., 'within 30 days of the disaster declaration', 'upon completion of the national consultation'). Set to false for calendar-based deadlines."@en ;
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a temporal entity specification depends on events outside the regulatory framework's direct control."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<http://data.europa.eu/2qy/rrmv#forAgent>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The property linking a particular Role to Agent."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#AgentRole> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Agent> .
+
+<http://data.europa.eu/2qy/rrmv#hasAgentRole>
+    <http://purl.org/vocab/vann/usageNote> "The involvement of the agent may be time dependent."@en ;
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The involvement of an agent in a role within this action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Action> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#AgentRole> .
+
+<http://data.europa.eu/2qy/rrmv#hasCategory>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A property connecting the Agent to its AgentCategory."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#AgentCategory> .
+
+<http://data.europa.eu/2qy/rrmv#hasDuration>
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Links a duration specification to its duration value, quantifying the time periods"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#DurationSpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+
+<http://data.europa.eu/2qy/rrmv#hasEnd>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an interval to its concluding instant."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#IntervalSpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#InstantSpec> .
+
+<http://data.europa.eu/2qy/rrmv#hasFrequency>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The frequency in which the Action is to be executed in case of repetitive mandate."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Frequency> .
+
+<http://data.europa.eu/2qy/rrmv#hasFunction>
+    <http://purl.org/vocab/vann/usageNote> "For instance as deadline, moment of entering into force, etc."@en ;
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The function played by the TemporalEntitySpecification, such as a deadline or a validity period."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalFunction> .
+
+<http://data.europa.eu/2qy/rrmv#hasNext>
+    <http://purl.org/vocab/vann/usageNote> "A requirement may formulate a repetitive sequence of actions. This property chains the actions together."@en ;
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A succeeding action"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Action> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Action> .
+
+<http://data.europa.eu/2qy/rrmv#hasResult>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A result of an action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Action> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#ActionResult> .
+
+<http://data.europa.eu/2qy/rrmv#hasStart>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an interval to its starting instant."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#IntervalSpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#InstantSpec> .
+
+<http://data.europa.eu/2qy/rrmv#hasStatus>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A status of this Action."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Action> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Status> .
+
+<http://data.europa.eu/2qy/rrmv#hasTarget>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an Annotation and its Target."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://data.europa.eu/2qy/rrmv#hasTopic>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A requirement has a topic if the requirement is related to or pertains to a specific concept or subject matter."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#hasType>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the kind of the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#ActionResult>, <http://data.europa.eu/2qy/rrmv#Role> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#ResultType>, <http://data.europa.eu/2qy/rrmv#RoleType> .
+
+<http://data.europa.eu/2qy/rrmv#hasURI>
+    <http://purl.org/vocab/vann/usageNote> "Multiple values indicate that the union of the content of these URIs should be considered for the complete understanding of the Requirement. This property can be repeated, as different portions of the act may encode different aspects of the Requirement, for instance, the addressees may be in one article, while the temporal aspects may be in another."@en ;
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "associates a rrmv:Requirement with a unique identifier, denoted by a Uniform Resource Identifier (URI), which serves as a reference to the portion (or portions) of the text from where the Requirement is expressed and modelled."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.europa.eu/2qy/rrmv#hasUnit>
+    <http://purl.org/vocab/vann/usageNote> "e.g. Quarter"@en ;
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of the Frequency"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Frequency> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/2qy/rrmv#in>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes that one temporal entity specification occurs entirely within the boundaries of another temporal entity specification."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#isPartOf>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource in which the described resource is physically or logically included."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/eli/ontology#Work> .
+
+<http://data.europa.eu/2qy/rrmv#isUnspecified>
+    <http://purl.org/vocab/vann/usageNote> "Set to true when the legal text indicates that a temporal aspect exists but does not specify its exact value (e.g., 'as soon as possible', 'in due time'). This differs from external event which refers to temporally defined but externally triggered events."@en ;
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a temporal aspect exists but is undefined or it depends on an event external to the legislative corpus."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<http://data.europa.eu/2qy/rrmv#meets>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that one temporal entity specification directly adjoins another one without overlap, where one ends exactly when the other begins."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#overlaps>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that two temporal entities specifications share a common portion of time without either completely containing the other."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#produces>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The action that is produced by a requirement."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Action> .
+
+<http://data.europa.eu/2qy/rrmv#related_to>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a somehow related other requirement."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Requirement> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Requirement> .
+
+<http://data.europa.eu/2qy/rrmv#rrmv:HasMember>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A Group has a member if the Agent is part of the Group, either as an individual entity or as a subgroup."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Group> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Agent> .
+
+<http://data.europa.eu/2qy/rrmv#starts>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Establishes that one temporal entity specification marks the beginning of another one."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#TemporalEntitySpec> .
+
+<http://data.europa.eu/2qy/rrmv#value>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the frequency."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#Frequency> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://data.europa.eu/2qy/rrmv#withRole>
+    a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The property linking a Agent to Role"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/2qy/rrmv#AgentRole> ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/2qy/rrmv> ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/2qy/rrmv#Role> .
+
