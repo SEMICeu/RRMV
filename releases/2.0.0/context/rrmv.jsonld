@@ -6,7 +6,9 @@
     "AgentCategory": "http://data.europa.eu/2qy/rrmv#AgentCategory",
     "AgentRole": "http://data.europa.eu/2qy/rrmv#AgentRole",
     "Annotation": "http://www.w3.org/ns/oa#Annotation",
+    "Dcat:Resource": "http://www.w3.org/ns/dcat#Resource",
     "DurationSpec": "http://data.europa.eu/2qy/rrmv#DurationSpec",
+    "ExecutionCondition": "http://data.europa.eu/2qy/rrmv#ExecutionCondition",
     "Expression": "http://data.europa.eu/eli/ontology#Expression",
     "Frequency": "http://data.europa.eu/2qy/rrmv#Frequency",
     "Group": "http://data.europa.eu/2qy/rrmv#Group",
@@ -163,6 +165,11 @@
       "@id": "http://data.europa.eu/2qy/rrmv#atTime",
       "@type": "@id"
     },
+    "rrmv:executionCondition": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/2qy/rrmv#rrmv:executionCondition",
+      "@type": "@id"
+    },
     "rrmv:forAgent": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#forAgent",
@@ -222,9 +229,19 @@
       "@id": "http://data.europa.eu/2qy/rrmv#hasURI",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
+    "rrmv:manifestedIn": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/2qy/rrmv#rrmv:manifestedIn",
+      "@type": "@id"
+    },
     "rrmv:produces": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#produces",
+      "@type": "@id"
+    },
+    "rrmv:providedBy": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/2qy/rrmv#rrmv:providedBy",
       "@type": "@id"
     },
     "rrmv:value": {
@@ -235,6 +252,11 @@
       "@id": "http://data.europa.eu/2qy/rrmv#withRole",
       "@type": "@id"
     },
+    "rrmv:withinDataflow": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/2qy/rrmv#rrmv:withinDataflow",
+      "@type": "@id"
+    },
     "skos:prefLabel": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
@@ -242,6 +264,10 @@
     "starts": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2qy/rrmv#starts",
+      "@type": "@id"
+    },
+    "type": {
+      "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     }
   }
